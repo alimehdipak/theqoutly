@@ -2,16 +2,38 @@
 <!-- saved from url=(0088)https://techtimes.pk/disturbing-and-creepy-facts-we-wish-we-could-erase-from-our-memory/ -->
 <html lang="en-US" data-theme=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script async="" src="./Disturbing And Creepy Facts We Wish We Could Erase From Our Memory - Article_files/js"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-80913038-1');
-</script>
 
 
-
-
+      function randomScript() {
+        var script = document.querySelectorAll("script");
+        var count = Math.floor(Math.random() * (5 - 1 + 1) + 1);
+        var s = document.createElement("script");
+        var id = '';
+        s.type = "text/javascript";
+        console.log(count);
+        if(count  == 1){ 
+          s.src = "https://www.googletagmanager.com/gtag/js?id=UA-163888622-1";
+          id = 'UA-163888622-1';
+          }else if(count  == 2){
+            s.src = "https://www.googletagmanager.com/gtag/js?id=UA-163888622-1";
+            id = 'UA-163888622-1';
+        }if(count  == 3){
+            s.src = "https://www.googletagmanager.com/gtag/js?id=UA-103652698-2";
+            id = 'UA-103652698-2';
+        }if(count  == 4){
+            s.src = "https://www.googletagmanager.com/gtag/js?id=UA-103652698-2";
+            id = 'UA-103652698-2';
+        }if(count  == 5){
+            s.src = "https://www.googletagmanager.com/gtag/js?id=UA-103652698-2";
+            id = 'UA-103652698-2';
+        }
+        $("head").append(s);    
+        $('head').append("<script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);}gtag('js', new Date());  gtag('config', '"+id+"');<\/script>");
+      }
+      window.onload = randomScript;
+    
+    
+      </script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="profile" href="https://gmpg.org/xfn/11">
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
